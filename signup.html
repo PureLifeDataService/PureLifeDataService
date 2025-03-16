@@ -9,29 +9,41 @@
 <body>
     <div class="signup-container">
         <h2>Request to Sign Up Now</h2>
-        <p>Sign up to get started.</p>
-        
+        <p class="description">Sign up to get started and enjoy all VTU services at the best rates.</p>
+
         <form id="signup-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" required>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" required>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
 
-            <label for="confirm-password">Repeat Password:</label>
-            <input type="password" id="confirm-password" required>
+            <div class="form-group">
+                <label for="confirm-password">Repeat Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
 
-            <button type="button" id="verify-btn">Verify</button>
-            <button type="submit" id="signup-btn" disabled>Sign Up</button>
+            <div class="button-group">
+                <button type="button" id="verify-btn" class="verify-btn">Verify</button>
+                <button type="submit" id="signup-btn" class="signup-btn" disabled>Sign Up</button>
+            </div>
         </form>
 
-        <p>Already have an account? <a href="login.html">Login</a></p>
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
     </div>
 
     <script src="script.js"></script>
